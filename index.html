@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Blackbelt Process Automation</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section><h1>Blackbelt Process Automation</h1>
+					Bing Wang <br/>@twtinc
+				</section>
+				<section>
+					<section><h2>More Than a Hammer: Tool Choices</h2>
+						<UL>
+							<li class="fragment">Workflow Rule</li>
+							<li class="fragment">Apex</li>
+							<li class="fragment">Process Builder/Visual Flow</li>
+						</UL>
+					
+					</section>
+				</section>
+				<section><h2>Process Builder and What Makes It Cool</h2>
+
+						<UL>
+							<li class="fragment">Extensibility</li>
+							<li class="fragment">Reusability</li>
+							<li class="fragment">Ease of Update</li>
+						</UL>
+
+				</section>
+				<section>
+					<section><h2>Using Quick Actions</h2>
+						Build once, use at many places
+					</section>
+					<section>
+							<P>UI Quick Actions</P>
+							<image src="images/newdeal.jpg"/>
+					</section>
+					<section>
+						<P>Search by:</P>
+						<image src="images/selectaction.jpg"/>
+					</section>
+				</section>				
+				<section>
+					<section><h2>Invoking A Process</h2></section>
+					<section>Preparation: Creating An Invocable Process
+						<image src="images/proc2invoke.jpg"/>
+					</section>
+					<section>Use Invocable Process as Action
+						<image src="images/actiontypes.jpg"/>
+					</section>
+				</section>
+				<section><h2>Launching a Flow</h2>
+					<p>Active, autolaunched flows</p>
+					<image class="fragment" src="images/autoflow.jpg" /><br/>
+					<image class="fragment" src="images/flowaction.jpg" />
+				</section>								
+				<section>
+					<section><h2>Calling Apex Code</h2></section>
+					<section><h3>Preparation: Creating An Invocable Apex Method</h3>
+						<image src="images/invocable.jpg"/>
+						<br/><p class="fragment">Note: Invocable methods are also accessible via Salesforce REST API</p>
+					</section>				
+					<section>
+						<image src="images/apexaction.jpg" />
+					</section>
+				</section>
+				<section><h2>Setting Parameters</h2>
+					<section>Quick Action<br/>
+						<image src="images/param_action.jpg"/>
+					</section>					
+					<section>Process<br/>
+						<image src="images/param_proc.jpg"/>
+					</section>	
+					<section>Flow<br/>
+						<image src="images/param_flow.jpg"/>
+					</section>	
+					<section>Apex<br/>
+						<image src="images/param_apex.jpg"/>
+					</section>					
+				</section>
+				<section><h2>Resources</h2>
+					<ul>
+						<li>Trailhead <br/>https://trailhead.salesforce.com/</li>
+						<li>Trailmix - Blackbelt Process Builder http://sforce.co/2yhkptI</li>
+					</ul>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
